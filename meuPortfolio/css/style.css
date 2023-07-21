@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  /* Paleta de cores complementares */
+  --navbar: #2C33FA;
+  --menu: #2429C7;
+  --section: #3B3D7A;
+  --fundo: #16197A;
+  --titulo: #787DFB;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px auto;
+  color: white;
+  background-image: linear-gradient(to right, transparent, var(--titulo), transparent);
+  background-clip: text;
+  font-weight: bolder;
+  padding: 40px;
+}
+
+
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--fundo);
+  height: 100vh;
+}
+a{
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Navegação Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--navbar);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav a {
+  padding: 15px;
+  color: var(--titulo);
+}
+
+/* Menu hambúrguer */
+#burguer {
+  color: white;
+  padding: 10px;
+  display: none;
+}
+
+/* MAIN */
+main {
+  background-color: var(--menu);
+  margin: auto;
+  min-width: 300px;
+  max-width: 1200px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Principal onde está o meu perfil */
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  margin-top: 50px;
+}
+
+.principal h1,
+.principal picture {
+  flex-basis: calc(50% - 20px);
+  max-width: 100%;
+}
+
+.principal picture img {
+  max-width: 100%;
+  display: block;
+  border-radius: 60px;
+  border: 3px solid black;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.025);
+}
+
+.principal picture {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Sobre mim */
+.sobre {
+  background-color: var(--section);
+  border-radius: 15px;
+  padding: 20px;
+  margin: auto;
+  max-width: 900px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.025);
+
+}
+
+.sobre>article {
+  border-radius: 20px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.9;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+/* Habilidades */
+.habilidades-container {
+  background-color: var(--section);
+  border-radius: 15px;
+  display: grid;
+  width: 100%;
+}
+
+.habilidades {
+  background-color: var(--section);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin: auto;
+  grid-gap: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.13);
+}
+
+.habilidades>ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-self: center;
+}
+
+.habilidades>ul:nth-child(2) li img {
+  max-width: 90px;
+}
+
+.habilidades img {
+  max-width: 50px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.habilidades>.descricao {
+  border-radius: 10px;
+  background-color: white;
+  grid-column: 3;
+  display: block;
+  text-indent: 10px;
+  padding: 10px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/* Projetos */
+.projetos img {
+  max-width: 100%;
+  display: block;
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.projetos>div {
+  color: white;
+  flex: 1 1 200px;
+  margin: 10px;
+  background-color: var(--section);
+  max-width: 300px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Formulário de contatos */
+textarea {
+  resize: none;
+}
+
+.container-form {
+  display: flex;
+  max-width: 600px;
+  background-color: var(--section);
+  border-radius: 15px;
+  margin: auto;
+}
+
+.modeloFormulario {
+  background-color: var(--fundo);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.025);
+}
+
+.modeloFormulario label,
+.modeloFormulario h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.modeloFormulario input,
+.modeloFormulario textarea,
+.modeloFormulario button {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+.modeloFormulario button {
+  background-color: var(--titulo);
+  cursor: pointer;
+  border: none;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  padding: 14px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background-color: var(--fundo);
+  color: white;
+  padding: 15px;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+footer>div {
+  font-size: 0.8em;
+}
+
+footer a {
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.342);
+  margin: auto 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(51, 19, 214);
+}
