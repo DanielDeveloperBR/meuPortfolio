@@ -10,11 +10,11 @@
 
 :root {
   /* Paleta de cores complementares */
-  --navbar: #2C33FA;
-  --menu: #2429C7;
+  --titulo: #2C33FA;
+  --navbar: #2429C7;
   --section: #3B3D7A;
   --fundo: #16197A;
-  --titulo: #787DFB;
+  --menu: #787DFB;
 }
 
 h2 {
@@ -43,7 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: var(--navbar);
   position: fixed;
   top: 0;
@@ -58,7 +58,7 @@ nav li {
 
 nav a {
   padding: 15px;
-  color: var(--titulo);
+  color: white;
 }
 
 /* Menu hambúrguer */
@@ -70,7 +70,7 @@ nav a {
 
 /* MAIN */
 main {
-  background-color: var(--menu);
+  background-color: white;
   margin: auto;
   min-width: 300px;
   max-width: 1200px;
@@ -84,12 +84,19 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  color: white;
+  color: #000;
   margin-top: 50px;
+  padding-top: 60px;
 }
-
+.principal div{
+  max-width: 400px;
+  width: 100%;
+}
+.principal picture p{
+  margin-top: 10px;
+}
 .principal h1,
 .principal picture {
   flex-basis: calc(50% - 20px);
@@ -193,19 +200,25 @@ main {
   max-width: 1200px;
   text-align: center;
   margin: auto;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .projetos>div {
   color: white;
-  flex: 1 1 200px;
-  margin: 10px;
-  background-color: var(--section);
-  max-width: 300px;
-  border-radius: 30px;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.16);
-  text-align: center;
-  padding: 20px;
+    margin: 10px;
+    background-color: var(--section);
+    max-width: 350px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    padding: 20px;
+}
+.projetos > div p{
+  margin: 10px auto;
+}
+.projetos h2{
+  margin: 0;
 }
 
 /* Formulário de contatos */
