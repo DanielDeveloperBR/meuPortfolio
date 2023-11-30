@@ -1,0 +1,47 @@
+.principal.active,
+.sobre.active, .habilidades.active, .projetos.active, .contatos.active {
+    opacity: 1;
+    animation: fadeInLado 0.8s ease-out;
+}
+.active {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+
+/* Animações */
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-text span {
+    display: inline-block;
+    opacity: 0;
+  }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+
+/* Animação de fade-in e deslize para cima */
+@keyframes fadeInLado {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
