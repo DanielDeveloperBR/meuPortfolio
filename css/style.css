@@ -36,7 +36,10 @@ body {
   height: 100vh;
 }
 a{
-  color: rgba(255, 255, 255, 0.6);
+  color:rgb(255 255 255 / 60%);
+}
+.principal a{
+  color: #000;
 }
 /* Navegação Navbar */
 header {
@@ -89,6 +92,9 @@ main {
   color: #000;
   margin-top: 50px;
   padding-top: 60px;
+}
+.principal > p{
+  font-style: italic;
 }
 .principal div{
   max-width: 460px;

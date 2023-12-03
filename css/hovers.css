@@ -3,7 +3,7 @@
 a:hover,
 footer a:hover {
     text-decoration: underline;
-    color: #ffffff34;
+    opacity: 0.6;
 }
 
 /*Menu hambúrguer*/
@@ -14,6 +14,6 @@ footer a:hover {
 
 /*Botao do formulario de enviar*/
 .modeloFormulario button:hover {
-    background-color: white;
-    font-size: large;
+    opacity: 0.3;
+    font-size: 17px;
 }
