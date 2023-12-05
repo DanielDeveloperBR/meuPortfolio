@@ -49,3 +49,43 @@
         padding: 10px;
     }
 }
+
+/* Comentarios */
+@media screen and (max-width: 505px) {
+    .comentarios {
+        grid-template-columns: 1fr;
+        /* Uma coluna em telas menores */
+    }
+
+    .comentarios a {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .comentarios div {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .comentarios p {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 80%;
+        margin: 8px auto;
+    }
+
+    .comentarios p,
+    .comentarios div,
+    .comentarios a {
+        text-align: center;
+    }
+
+    .comentarios span {
+        grid-column: 1;
+        /* Ocupa uma coluna */
+        grid-row: 4;
+        /* Adicione uma nova linha se necessário */
+        text-align: center;
+        /* Ajuste conforme necessário */
+    }
+}

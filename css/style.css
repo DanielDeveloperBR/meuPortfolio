@@ -229,6 +229,55 @@ main {
   margin: 0;
 }
 
+/* Comentários */
+.comentarios{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  max-width: 500px;
+  background-color: gray;border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.comentarios div {
+  font-size: 14px;
+  font-style: italic;
+  grid-row: 3;
+
+}
+.comentarios p{
+  background-color: var(--section);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  white-space: nowrap;
+  border: 2px solid black;
+  box-shadow: -3px 3px 3px #0707075d, -6px 5px 5px #2b262641;
+}
+.comentarios p, .comentarios div, .comentarios a{
+  text-align: left; 
+
+}
+.comentarios span{
+  max-width: 100%;
+  text-align: end;
+  margin-left: 20px;
+  grid-row: 3;
+  font-weight: bolder;
+
+}
+.comentarios a{
+  grid-column: 1 / span 2; 
+  padding: 10px;
+  color: var(--section) !important;
+}
+
 /* Formulário de contatos */
 textarea {
   resize: none;
