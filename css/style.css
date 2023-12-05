@@ -347,7 +347,7 @@ footer>div {
 footer a {
   font-weight: bolder;
   color: rgba(255, 255, 255, 0.342);
-  margin: auto 10px;
+  margin: auto 20px;
 }
 
 footer a:hover {

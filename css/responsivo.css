@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Estilos para telas menores que 650px de largura */
 @media all and (max-width: 650px) {
     nav {
@@ -44,10 +43,6 @@
         grid-column: span 2;
     }
 
-    main {
-        width: 100%;
-        padding: 10px;
-    }
 }
 
 /* Comentarios */
@@ -72,6 +67,7 @@
         grid-row: 3;
         max-width: 80%;
         margin: 8px auto;
+        white-space: normal;
     }
 
     .comentarios p,
@@ -82,10 +78,7 @@
 
     .comentarios span {
         grid-column: 1;
-        /* Ocupa uma coluna */
         grid-row: 4;
-        /* Adicione uma nova linha se necessário */
-        text-align: center;
-        /* Ajuste conforme necessário */
+        text-align: right;
     }
 }
