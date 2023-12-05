@@ -202,6 +202,9 @@ main {
   display: block;
 }
 
+.projetos > div:nth-child(2) img {
+  margin: auto;
+}
 .projetos {
   display: flex;
   flex-wrap: wrap;
