@@ -39,7 +39,7 @@ a{
   color:rgb(255 255 255 / 60%);
 }
 .principal a{
-  color: #000;
+  color: var(--titulo);
 }
 /* Navegação Navbar */
 header {
@@ -111,6 +111,7 @@ main {
 .principal h1{
   font-size: 50px;
 }
+
 .principal picture img {
   max-width: 100%;
   display: block;
@@ -203,7 +204,8 @@ main {
 }
 
 .projetos > div:nth-child(2) img {
-  margin: auto;
+  margin: 10px auto;
+  max-width: 50%;
 }
 .projetos {
   display: flex;

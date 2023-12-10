@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@media (max-width: 765px){
+    .principal p, .principal h1{
+        text-align: center;
+      }
+}
 /* Estilos para telas menores que 650px de largura */
 @media all and (max-width: 650px) {
     nav {
