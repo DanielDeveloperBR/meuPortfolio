@@ -27,9 +27,19 @@
     }
 
     .principal {
-        display: block;
-        text-align: -webkit-center;
-    }
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: #000;
+        margin-top: 50px;
+        padding-top: 60px;
+      }
+      
 
     section.principal div {
         margin-top: 10vh;
@@ -55,6 +65,9 @@
     .comentarios {
         grid-template-columns: 1fr;
         /* Uma coluna em telas menores */
+    }
+    .comentarios > p.segundoParagrafo {
+        width: auto;
     }
 
     .comentarios a {

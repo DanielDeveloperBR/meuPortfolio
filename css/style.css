@@ -20,11 +20,12 @@
 h2 {
   text-align: center;
   margin: 40px auto;
-  color: white;
-  background-image: linear-gradient(to right, transparent, var(--titulo), transparent);
-  background-clip: text;
+  color: transparent;
   font-weight: bolder;
   padding: 40px;
+  background: linear-gradient(to right, transparent, var(--titulo), transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 
@@ -265,6 +266,15 @@ main {
   border: 2px solid black;
   box-shadow: -3px 3px 3px #0707075d, -6px 5px 5px #2b262641;
 }
+.comentarios > p.segundoParagrafo {
+  white-space: normal;
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+
+
 .comentarios p, .comentarios div, .comentarios a{
   text-align: left; 
 
