@@ -215,7 +215,6 @@ main {
   text-align: center;
   margin: auto;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .projetos>div {
@@ -281,11 +280,13 @@ main {
 }
 .comentarios span{
   max-width: 100%;
-  text-align: end;
-  margin-left: 20px;
+  text-align: center;
   grid-row: 3;
   font-weight: bolder;
-
+}
+.comentarios span span{
+  color: white;
+  text-shadow: 3px 2px 5px #0000007a;
 }
 .comentarios a{
   grid-column: 1 / span 2; 
@@ -293,6 +294,11 @@ main {
   color: var(--section) !important;
 }
 
+.comentarios .material-symbols-outlined::after {
+  content: "\2605";
+  color: yellow;
+  text-shadow: 7px 1px 3px rgba(0, 0, 0, 0.28);
+}
 /* Formulário de contatos */
 textarea {
   resize: none;
